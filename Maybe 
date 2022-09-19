@@ -1,0 +1,27 @@
+
+             VStack(spacing:5){
+//                        Slider(value: $value, in:0...60){
+//                            editing in
+//                            isEditing = editing
+//                            if !editing {
+////                                player.currentTime = value
+//
+//                            }
+//                        }
+//                        .accentColor(.white)
+//
+//                        HStack{
+////                            Text(DateComponentsFormatter.positional.string(from: player.currentTime) ?? "0:00")
+////                            Spacer()
+////                            Text(DateComponentsFormatter.positional.string(from: duration - player.currentTime) ?? "0:00")
+//                        }
+//                        .font(.caption)
+//                        .foregroundColor(.white)
+//
+//
+//                    }.padding(.horizontal, 30)
+//
+//                    HStack{
+////                        PlaybackControllButton(systemName: audioManager.isPlaying ? "pause.circle.fill" : "play.circle.fill", fontSize:44){
+////                            audioManager.playPause()
+//                        }

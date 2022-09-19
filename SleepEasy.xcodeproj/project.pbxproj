@@ -7,18 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B416E0002A76A34F7A18B8A /* Pods_SleepEasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6ED3B7E8DEB9FFC518224F /* Pods_SleepEasy.framework */; };
 		A65F1EE328CF5DB1006290B6 /* SleepEasyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1EE228CF5DB1006290B6 /* SleepEasyApp.swift */; };
 		A65F1EE528CF5DB1006290B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1EE428CF5DB1006290B6 /* ContentView.swift */; };
 		A65F1EE728CF5DB4006290B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65F1EE628CF5DB4006290B6 /* Assets.xcassets */; };
 		A65F1EEA28CF5DB4006290B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65F1EE928CF5DB4006290B6 /* Preview Assets.xcassets */; };
+		A65F1EF128CF5F78006290B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A65F1EF028CF5F78006290B6 /* GoogleService-Info.plist */; };
+		A65F1EF328CF61FF006290B6 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1EF228CF61FF006290B6 /* Sounds.swift */; };
+		A65F1EF528CF637D006290B6 /* SongListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1EF428CF637D006290B6 /* SongListView.swift */; };
+		A65F1EF728CFCF94006290B6 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1EF628CFCF94006290B6 /* PlayerView.swift */; };
+		A65F1EF928CFD045006290B6 /* PlaybackControllButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1EF828CFD045006290B6 /* PlaybackControllButton.swift */; };
+		A65F1EFB28CFD946006290B6 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1EFA28CFD946006290B6 /* AudioManager.swift */; };
+		A65F1F0028CFEC16006290B6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1EFF28CFEC16006290B6 /* Extensions.swift */; };
+		A65F1F0228D12D7C006290B6 /* SleepEasyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1F0128D12D7B006290B6 /* SleepEasyView.swift */; };
+		A65F1F0428D12D98006290B6 /* BigCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1F0328D12D98006290B6 /* BigCardView.swift */; };
+		A6700E8C28D3DD5D0097EB72 /* FilterGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6700E8B28D3DD5D0097EB72 /* FilterGenre.swift */; };
+		A6700E8E28D4D7B70097EB72 /* Maybe  in Resources */ = {isa = PBXBuildFile; fileRef = A6700E8D28D4D7B60097EB72 /* Maybe  */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1ECB486B078C9929EF817AA8 /* Pods-SleepEasy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepEasy.debug.xcconfig"; path = "Target Support Files/Pods-SleepEasy/Pods-SleepEasy.debug.xcconfig"; sourceTree = "<group>"; };
+		4C27E442CA116B622E49F16B /* Pods-SleepEasy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepEasy.release.xcconfig"; path = "Target Support Files/Pods-SleepEasy/Pods-SleepEasy.release.xcconfig"; sourceTree = "<group>"; };
+		5F6ED3B7E8DEB9FFC518224F /* Pods_SleepEasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SleepEasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65F1EDF28CF5DB1006290B6 /* SleepEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65F1EE228CF5DB1006290B6 /* SleepEasyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepEasyApp.swift; sourceTree = "<group>"; };
 		A65F1EE428CF5DB1006290B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A65F1EE628CF5DB4006290B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A65F1EE928CF5DB4006290B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A65F1EF028CF5F78006290B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A65F1EF228CF61FF006290B6 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		A65F1EF428CF637D006290B6 /* SongListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListView.swift; sourceTree = "<group>"; };
+		A65F1EF628CFCF94006290B6 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		A65F1EF828CFD045006290B6 /* PlaybackControllButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControllButton.swift; sourceTree = "<group>"; };
+		A65F1EFA28CFD946006290B6 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		A65F1EFE28CFE7A1006290B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A65F1EFF28CFEC16006290B6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A65F1F0128D12D7B006290B6 /* SleepEasyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepEasyView.swift; sourceTree = "<group>"; };
+		A65F1F0328D12D98006290B6 /* BigCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigCardView.swift; sourceTree = "<group>"; };
+		A6700E8B28D3DD5D0097EB72 /* FilterGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterGenre.swift; sourceTree = "<group>"; };
+		A6700E8D28D4D7B60097EB72 /* Maybe  */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Maybe "; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +53,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B416E0002A76A34F7A18B8A /* Pods_SleepEasy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23E49D2EE33550EE156E2ABC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1ECB486B078C9929EF817AA8 /* Pods-SleepEasy.debug.xcconfig */,
+				4C27E442CA116B622E49F16B /* Pods-SleepEasy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7F142A1927FB8473F81B205A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F6ED3B7E8DEB9FFC518224F /* Pods_SleepEasy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A65F1ED628CF5DB1006290B6 = {
 			isa = PBXGroup;
 			children = (
+				A6700E8D28D4D7B60097EB72 /* Maybe  */,
 				A65F1EE128CF5DB1006290B6 /* SleepEasy */,
 				A65F1EE028CF5DB1006290B6 /* Products */,
+				23E49D2EE33550EE156E2ABC /* Pods */,
+				7F142A1927FB8473F81B205A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,9 +99,20 @@
 		A65F1EE128CF5DB1006290B6 /* SleepEasy */ = {
 			isa = PBXGroup;
 			children = (
+				A65F1EFE28CFE7A1006290B6 /* Info.plist */,
 				A65F1EE228CF5DB1006290B6 /* SleepEasyApp.swift */,
+				A65F1F0128D12D7B006290B6 /* SleepEasyView.swift */,
+				A6700E8B28D3DD5D0097EB72 /* FilterGenre.swift */,
+				A65F1F0328D12D98006290B6 /* BigCardView.swift */,
+				A65F1EF428CF637D006290B6 /* SongListView.swift */,
+				A65F1EF628CFCF94006290B6 /* PlayerView.swift */,
+				A65F1EFF28CFEC16006290B6 /* Extensions.swift */,
+				A65F1EF828CFD045006290B6 /* PlaybackControllButton.swift */,
 				A65F1EE428CF5DB1006290B6 /* ContentView.swift */,
+				A65F1EFA28CFD946006290B6 /* AudioManager.swift */,
+				A65F1EF228CF61FF006290B6 /* Sounds.swift */,
 				A65F1EE628CF5DB4006290B6 /* Assets.xcassets */,
+				A65F1EF028CF5F78006290B6 /* GoogleService-Info.plist */,
 				A65F1EE828CF5DB4006290B6 /* Preview Content */,
 			);
 			path = SleepEasy;
@@ -74,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A65F1EED28CF5DB4006290B6 /* Build configuration list for PBXNativeTarget "SleepEasy" */;
 			buildPhases = (
+				F38B210D551FBD3C9DA0EB02 /* [CP] Check Pods Manifest.lock */,
 				A65F1EDB28CF5DB1006290B6 /* Sources */,
 				A65F1EDC28CF5DB1006290B6 /* Frameworks */,
 				A65F1EDD28CF5DB1006290B6 /* Resources */,
+				6D53AD83DF30ADE968ECDF92 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,20 +186,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6700E8E28D4D7B70097EB72 /* Maybe  in Resources */,
 				A65F1EEA28CF5DB4006290B6 /* Preview Assets.xcassets in Resources */,
 				A65F1EE728CF5DB4006290B6 /* Assets.xcassets in Resources */,
+				A65F1EF128CF5F78006290B6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D53AD83DF30ADE968ECDF92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SleepEasy/Pods-SleepEasy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SleepEasy/Pods-SleepEasy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SleepEasy/Pods-SleepEasy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F38B210D551FBD3C9DA0EB02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SleepEasy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A65F1EDB28CF5DB1006290B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A65F1EF328CF61FF006290B6 /* Sounds.swift in Sources */,
+				A65F1F0428D12D98006290B6 /* BigCardView.swift in Sources */,
+				A65F1EFB28CFD946006290B6 /* AudioManager.swift in Sources */,
+				A6700E8C28D3DD5D0097EB72 /* FilterGenre.swift in Sources */,
 				A65F1EE528CF5DB1006290B6 /* ContentView.swift in Sources */,
+				A65F1F0028CFEC16006290B6 /* Extensions.swift in Sources */,
 				A65F1EE328CF5DB1006290B6 /* SleepEasyApp.swift in Sources */,
+				A65F1EF728CFCF94006290B6 /* PlayerView.swift in Sources */,
+				A65F1EF528CF637D006290B6 /* SongListView.swift in Sources */,
+				A65F1F0228D12D7C006290B6 /* SleepEasyView.swift in Sources */,
+				A65F1EF928CFD045006290B6 /* PlaybackControllButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +377,7 @@
 		};
 		A65F1EEE28CF5DB4006290B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ECB486B078C9929EF817AA8 /* Pods-SleepEasy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -272,6 +387,7 @@
 				DEVELOPMENT_TEAM = 437XH2568Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SleepEasy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -292,6 +408,7 @@
 		};
 		A65F1EEF28CF5DB4006290B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C27E442CA116B622E49F16B /* Pods-SleepEasy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +418,7 @@
 				DEVELOPMENT_TEAM = 437XH2568Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SleepEasy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
