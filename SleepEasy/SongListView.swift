@@ -65,7 +65,7 @@ struct SongListView: View {
                                             
                                             Spacer()
                                             
-                                            Text("\(sound.duration)")
+                                            Text("\(DateComponentsFormatter.positional.string(from:sound.duration) ?? "0:00")")
                                                 .font(.system(size:12))
                                                 .fontWeight(.light)
                                                 .padding(15)

@@ -71,11 +71,18 @@ struct PlayerView: View {
                 Spacer()
                 if let player = audioManager.player{
                 VStack(spacing:5){
-                    Slider(value: $value, in:0...60)
+                    Slider(value: $value, in:0...audio.duration){
+                        editing in
+                        if !editing {
+                            var currentTime = CMTimeGetSeconds((player.currentTime()))
+                            currentTime = value
+                        }
+                    }
                         .padding(.horizontal, 30)
                         .padding(.vertical, 10)
+                        .accentColor(.white)
                         HStack(spacing:30){
-                            Text("0:00")
+                            Text("\(DateComponentsFormatter.positional.string(from: CMTimeGetSeconds(player.currentTime())) ?? "0:00")")
                             Spacer()
                            
                         }
@@ -84,9 +91,7 @@ struct PlayerView: View {
                         .padding(.horizontal, 30)
                         PlaybackControllButton(systemName: audioManager.isPlaying ? "pause.circle.fill" : "play.circle.fill", fontSize: 40) {
                             audioManager.playPause()
-                            var time = player.currentTime()
-                            var seconds = CMTimeGetSeconds(time)
-                            print(Double(seconds))
+                         
                         }
                     }
                 }
@@ -95,6 +100,10 @@ struct PlayerView: View {
         .onAppear{
             audioManager.startPlayer(urlLink: audio.track)
             }
+        .onReceive(timer) { _ in
+            guard let player = audioManager.player else { return }
+            value = CMTimeGetSeconds((player.currentTime()))
+        }
             
         .navigationBarTitle("")
         .navigationBarHidden(true)
@@ -115,7 +124,7 @@ struct PlayerView: View {
 
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerView(audio: Sound(title: "there is", author: "", duration: "", image: "", track: "", genre: ""), isPreview:true)
+        PlayerView(audio: Sound(title: "there is", author: "", duration: 0, image: "", track: "", genre: ""), isPreview:true)
             .environmentObject(AudioManager())
     }
 }

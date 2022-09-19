@@ -28,7 +28,7 @@ class SoundViewModel: ObservableObject{
                 
                 let title = data["title"] as? String ?? ""
                 let author = data["author"] as? String ?? ""
-                let duration = data["duration"] as? String ?? ""
+                let duration = data["duration"] as? Double ?? 0
                 let track = data["track"] as? String ?? ""
                 let image = data["image"] as? String ?? ""
                 let genre = data["genre"] as? String ?? ""
@@ -44,10 +44,10 @@ struct Sound:Identifiable {
     var id = UUID()
     var title: String
     var author: String
-    var duration: String
+    var duration: Double
     var image: String
     var track: String
     var genre: String
 
-    static let testData = Sound(title: "Relaxing", author: "Benjamin Tissot", duration: "4:48", image: "relaxing-X2", track: "", genre: "anxiety")
+    static let testData = Sound(title: "Relaxing", author: "Benjamin Tissot", duration: 448, image: "relaxing-X2", track: "", genre: "anxiety")
 }
