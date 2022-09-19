@@ -19,6 +19,8 @@ struct PlayerView: View {
     @State private var value: Double = 0.0
     @State private var isEditing: Bool = false
     @Environment(\.dismiss) var dismiss
+    
+    
 
     let timer = Timer
         .publish(every: 1, on: .main, in: .common)
@@ -75,7 +77,10 @@ struct PlayerView: View {
                         editing in
                         if !editing {
                             var currentTime = CMTimeGetSeconds((player.currentTime()))
-                            currentTime = value
+                            player.seek(to: CMTimeMakeWithSeconds(value, preferredTimescale: 1))
+                            if player.rate == 0 {
+                                print(DateComponentsFormatter.positional.string(from: CMTimeGetSeconds(player.currentTime())))
+                            }
                         }
                     }
                         .padding(.horizontal, 30)
@@ -84,14 +89,14 @@ struct PlayerView: View {
                         HStack(spacing:30){
                             Text("\(DateComponentsFormatter.positional.string(from: CMTimeGetSeconds(player.currentTime())) ?? "0:00")")
                             Spacer()
-                           
+                           Text(getDuration())
                         }
                         .foregroundColor(.white)
                         .font(.caption)
                         .padding(.horizontal, 30)
                         PlaybackControllButton(systemName: audioManager.isPlaying ? "pause.circle.fill" : "play.circle.fill", fontSize: 40) {
                             audioManager.playPause()
-                         
+                          
                         }
                     }
                 }
@@ -113,7 +118,13 @@ struct PlayerView: View {
        
         }
 
-      
+    func getDuration() -> String {
+        
+        var duration = audioManager.player?.currentItem?.asset.duration
+        var getDurationString = DateComponentsFormatter.positional.string(from:CMTimeGetSeconds(duration!))
+        
+        return getDurationString!
+    }
 }
     
 
