@@ -73,14 +73,12 @@ struct PlayerView: View {
                 Spacer()
                 if let player = audioManager.player{
                 VStack(spacing:5){
-                    Slider(value: $value, in:0...audio.duration){
+                    Slider(value: $value, in:0...Double(getDuration())!){
                         editing in
                         if !editing {
-                            var currentTime = CMTimeGetSeconds((player.currentTime()))
+                           
                             player.seek(to: CMTimeMakeWithSeconds(value, preferredTimescale: 1))
-                            if player.rate == 0 {
-                                print(DateComponentsFormatter.positional.string(from: CMTimeGetSeconds(player.currentTime())))
-                            }
+                        
                         }
                     }
                         .padding(.horizontal, 30)
@@ -100,19 +98,14 @@ struct PlayerView: View {
                         }
                     }
                 }
-            }
-     
-        .onAppear{
-            audioManager.startPlayer(urlLink: audio.track)
-            }
-        .onReceive(timer) { _ in
-            guard let player = audioManager.player else { return }
-            value = CMTimeGetSeconds((player.currentTime()))
-        }
-            
-        .navigationBarTitle("")
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
+                  
+                  
+                    
+            }  .navigationBarTitle("")
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
+    
+
               
         }
        
