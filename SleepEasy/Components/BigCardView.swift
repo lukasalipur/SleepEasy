@@ -29,8 +29,10 @@ struct BigCardView: View {
                         .clipped()
                 }
                 
+                
                 .frame(width: 340, height: 100)
                 .cornerRadius(20)
+                .shadow(color: Color.black.opacity(0.3), radius: 5, x: 3, y: 3)
                 
                 Rectangle()
                     .frame(width: 340, height: 100)

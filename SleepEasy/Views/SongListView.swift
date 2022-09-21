@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import AVKit
 
 struct SongListView: View {
     @ObservedObject var soundVM = SoundViewModel()
@@ -19,8 +19,6 @@ struct SongListView: View {
     
    
     @ObservedObject var genre = FilterGenre.shared
-
-    
 
     
     var body: some View {
@@ -66,6 +64,7 @@ struct SongListView: View {
                                             Spacer()
                                             
                                             Text("\(DateComponentsFormatter.positional.string(from:sound.duration) ?? "0:00")")
+                                 
                                                 .font(.system(size:12))
                                                 .fontWeight(.light)
                                                 .padding(15)

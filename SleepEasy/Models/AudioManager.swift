@@ -12,12 +12,6 @@ import FirebaseStorage
 final class AudioManager:ObservableObject {
     
     var player: AVPlayer?
-
- 
-  
-    
-    
-    
     @Published var isPlaying:Bool = false{
         didSet{
             print("isPlaying", isPlaying)
@@ -61,5 +55,6 @@ final class AudioManager:ObservableObject {
             self.isPlaying = true
         }
     }
+    
     
 }
