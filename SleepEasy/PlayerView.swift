@@ -71,6 +71,26 @@ struct PlayerView: View {
                 }
                 
                 Spacer()
+                if audioManager.player == nil {
+                VStack(spacing:5){
+                    Slider(value: $value, in:0...60)
+                    .padding(.horizontal, 30)
+                    .padding(.vertical, 10)
+                    .accentColor(.white)
+                    HStack(spacing:30){
+                        Text("0:00")
+                        Spacer()
+                        Text("0:00")
+                    }
+                    .foregroundColor(.white)
+                    .font(.caption)
+                    .padding(.horizontal, 30)
+                    PlaybackControllButton(systemName:"play.circle.fill", fontSize: 40) {
+            
+                    }
+                }
+                }
+                
                 if let player = audioManager.player{
                 VStack(spacing:5){
                     Slider(value: $value, in:0...audio.duration){
@@ -96,10 +116,12 @@ struct PlayerView: View {
                         .padding(.horizontal, 30)
                         PlaybackControllButton(systemName: audioManager.isPlaying ? "pause.circle.fill" : "play.circle.fill", fontSize: 40) {
                             audioManager.playPause()
-                          
                         }
                     }
+                   
                 }
+                
+                
             }
      
         .onAppear{
