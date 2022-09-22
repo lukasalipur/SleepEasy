@@ -33,6 +33,7 @@ struct CenterView: View {
             }.simultaneousGesture(TapGesture().onEnded{
                 self.genre.genreFilter = "breathe"
             })
+                .buttonStyle(PlainButtonStyle())
             Spacer()
             NavigationLink{SongListView(audio: Sound.testData)
                     .navigationBarBackButtonHidden(true)
@@ -45,6 +46,7 @@ struct CenterView: View {
             }.simultaneousGesture(TapGesture().onEnded{
                 self.genre.genreFilter = "yoga"
             })
+                .buttonStyle(PlainButtonStyle())
             Spacer()
             NavigationLink{SongListView(audio: Sound.testData)
                     .navigationBarBackButtonHidden(true)
@@ -57,6 +59,7 @@ struct CenterView: View {
             }.simultaneousGesture(TapGesture().onEnded{
                 self.genre.genreFilter = "running"
             })
+                .buttonStyle(PlainButtonStyle())
             Spacer()
         }
         }

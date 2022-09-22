@@ -12,11 +12,14 @@ struct HeaderView: View {
     
     var body: some View {
         ZStack{
+            VStack{
             WaveBackgroundView()
                 .fill(Color("lightBlue"))
                 .shadow(color: Color.black.opacity(0.3), radius: 5, x: 3, y: 3)
                 .frame(height:100)
-            Spacer()
+                Spacer()
+            }.ignoresSafeArea()
+          
             VStack{
                 NavigationLink{SongListView(audio: Sound.testData)
                         .navigationBarBackButtonHidden(true)
@@ -29,6 +32,7 @@ struct HeaderView: View {
                 }.simultaneousGesture(TapGesture().onEnded{
                     self.genre.genreFilter = "anxiety"
                 })
+                    .buttonStyle(PlainButtonStyle())
                 
                 NavigationLink{SongListView(audio: Sound.testData)
                         .navigationBarBackButtonHidden(true)
@@ -41,9 +45,12 @@ struct HeaderView: View {
                 }.simultaneousGesture(TapGesture().onEnded{
                     self.genre.genreFilter = "affirmations"
                 })
+                    .buttonStyle(PlainButtonStyle())
             
         }
+            
     }
+        
     }
 }
 

@@ -18,8 +18,12 @@ struct SleepEasyView: View {
                 VStack(spacing:50){
          HeaderView()
          CenterView()
+            Spacer()
+            .frame(minHeight:300)
+            
                 }
-                Spacer()
+            
+              
         }
             
         .frame(maxWidth:.infinity, maxHeight: .infinity)
