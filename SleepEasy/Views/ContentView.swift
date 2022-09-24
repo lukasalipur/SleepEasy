@@ -8,12 +8,53 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        ZStack{
-        SleepEasyView()
-        }
-            
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor.white
     }
+    
+    var body: some View {
+
+            TabView{
+        
+            
+                  
+                  
+                    
+                SleepEasyView()
+                    .tabItem{
+                        Image(systemName:"house")
+                        Text("Home")
+                    }
+                
+                SleepEasyView()
+                    .tabItem{
+                        Image(systemName:"moon")
+                        Text("Sleep")
+                    }
+                
+                SleepEasyView()
+                    .tabItem{
+                        Image("lotus")
+                        Text("Meditate")
+                    }
+                
+                SleepEasyView()
+                    .tabItem{
+                        Image(systemName:"music.note")
+                        Text("Music")
+                    }
+                
+                
+                SleepEasyView()
+                    .tabItem {
+                        Image(systemName:"bell")
+                        Text("Reminder")
+                    }
+        }
+         
+        }
+        
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

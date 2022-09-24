@@ -14,13 +14,17 @@ struct SleepEasyView: View {
     
     var body: some View {
         NavigationView{
+            
             VStack{
+                
                 VStack(spacing:50){
+                    
          HeaderView()
          CenterView()
+         FooterView()    
             Spacer()
-            .frame(minHeight:300)
             
+                  
                 }
             
               

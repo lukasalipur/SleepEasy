@@ -17,6 +17,20 @@ struct HeaderView: View {
                 .fill(Color("lightBlue"))
                 .shadow(color: Color.black.opacity(0.3), radius: 5, x: 3, y: 3)
                 .frame(height:100)
+                .overlay(
+                    VStack{
+                    Text("SleepEasy.")
+                        .foregroundColor(.white)
+                        .font(.title)
+                        .fontWeight(.bold)
+                   
+                 
+                    }
+                    .padding(.top, 20)
+                        .frame(maxWidth:.infinity, maxHeight:70, alignment:.trailing)
+                
+                 
+                )
                 Spacer()
             }.ignoresSafeArea()
           
@@ -32,7 +46,7 @@ struct HeaderView: View {
                 }.simultaneousGesture(TapGesture().onEnded{
                     self.genre.genreFilter = "anxiety"
                 })
-                    .buttonStyle(PlainButtonStyle())
+          
                 
                 NavigationLink{SongListView(audio: Sound.testData)
                         .navigationBarBackButtonHidden(true)
@@ -45,7 +59,7 @@ struct HeaderView: View {
                 }.simultaneousGesture(TapGesture().onEnded{
                     self.genre.genreFilter = "affirmations"
                 })
-                    .buttonStyle(PlainButtonStyle())
+                  
             
         }
             
