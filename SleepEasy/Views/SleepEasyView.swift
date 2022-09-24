@@ -10,32 +10,25 @@ import SwiftUI
 
 
 struct SleepEasyView: View {
-
+    
     
     var body: some View {
         NavigationView{
             
             VStack{
-                
-                VStack(spacing:50){
-                    
-         HeaderView()
-         CenterView()
-         FooterView()    
-            Spacer()
-            
-                  
+                VStack(spacing:30){
+                    HeaderView()
+                    CenterView()
+                    FooterView()
+                    Spacer()
                 }
+            }
             
-              
-        }
-            
-        .frame(maxWidth:.infinity, maxHeight: .infinity)
-    
-        .background(Color("backgroundGrey"))
+            .frame(maxWidth:.infinity, maxHeight: .infinity)
+            .background(Color("backgroundGrey"))
         }
         
-     
+        
     }
 }
 

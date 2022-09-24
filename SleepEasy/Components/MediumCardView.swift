@@ -34,11 +34,11 @@ struct MediumCardView: View {
                 
                 VStack(alignment: .leading, spacing: 5){
                     Text(self.title)
-                        .font(.system(size:26))
+                        .font(.system(size:21))
                 }
                 .foregroundColor(.white)
                 .padding(.top, 70)
-                .padding(.horizontal, 10)
+                .padding(.horizontal, 20)
             }
             
         }

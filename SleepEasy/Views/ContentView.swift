@@ -15,11 +15,6 @@ struct ContentView: View {
     var body: some View {
 
             TabView{
-        
-            
-                  
-                  
-                    
                 SleepEasyView()
                     .tabItem{
                         Image(systemName:"house")
@@ -50,11 +45,8 @@ struct ContentView: View {
                         Image(systemName:"bell")
                         Text("Reminder")
                     }
+            }
         }
-         
-        }
-        
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

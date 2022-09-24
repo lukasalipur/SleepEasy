@@ -9,13 +9,18 @@ import SwiftUI
 
 struct FooterView: View {
     var body: some View {
+      
+       
+            
         VStack(alignment:.leading){
             Text("Motivation")
                 .font(.headline)
                 .foregroundColor(.gray)
                 .fontWeight(.bold)
                 .padding(.horizontal, 40)
+            
             HStack{
+                
                 NavigationLink{SongListView(audio: Sound.testData)
                         .navigationBarBackButtonHidden(true)
                         .navigationBarTitle("")
@@ -24,6 +29,7 @@ struct FooterView: View {
                 } label:{
                     MediumCardView(title: "Motivational speech", image: "success", genre: "motivationSpeech")
                 }
+                .buttonStyle(.plain)
                 NavigationLink{SongListView(audio: Sound.testData)
                         .navigationBarBackButtonHidden(true)
                         .navigationBarTitle("")
@@ -31,11 +37,15 @@ struct FooterView: View {
                     
                 } label:{
                     MediumCardView(title: "Motivational music", image: "headphones", genre: "motivationMusic")
-                }
+                }.buttonStyle(.plain)
             }
         }
+        .ignoresSafeArea()
+        
+            
     }
 }
+
 
 struct FooterView_Previews: PreviewProvider {
     static var previews: some View {
