@@ -17,10 +17,9 @@ struct FooterView: View {
                 .font(.headline)
                 .foregroundColor(.gray)
                 .fontWeight(.bold)
-                .padding(.horizontal, 40)
+                .padding(.horizontal, 20)
             
-            HStack{
-                
+            HStack(spacing:-17){
                 NavigationLink{SongListView(audio: Sound.testData)
                         .navigationBarBackButtonHidden(true)
                         .navigationBarTitle("")

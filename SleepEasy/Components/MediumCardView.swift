@@ -32,13 +32,15 @@ struct MediumCardView: View {
                     .opacity(0.1)
                     .cornerRadius(20)
                 
-                VStack(alignment: .leading, spacing: 5){
+                VStack(alignment: .leading){
                     Text(self.title)
                         .font(.system(size:21))
                 }
                 .foregroundColor(.white)
                 .padding(.top, 70)
-                .padding(.horizontal, 20)
+                .padding(.trailing, 45)
+                .padding(.leading, 20)
+                
             }
             
         }
