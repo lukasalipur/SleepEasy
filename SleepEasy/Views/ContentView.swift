@@ -15,32 +15,32 @@ struct ContentView: View {
     var body: some View {
 
             TabView{
-                SleepEasyView()
+                HomeView()
                     .tabItem{
                         Image(systemName:"house")
                         Text("Home")
                     }
                 
-                SleepEasyView()
+                SleepView()
                     .tabItem{
                         Image(systemName:"moon")
                         Text("Sleep")
                     }
                 
-                SleepEasyView()
+                HomeView()
                     .tabItem{
                         Image("lotus")
                         Text("Meditate")
                     }
                 
-                SleepEasyView()
+                HomeView()
                     .tabItem{
                         Image(systemName:"music.note")
                         Text("Music")
                     }
                 
                 
-                SleepEasyView()
+                HomeView()
                     .tabItem {
                         Image(systemName:"bell")
                         Text("Reminder")

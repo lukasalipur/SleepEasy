@@ -9,9 +9,6 @@ import SwiftUI
 
 struct FooterView: View {
     var body: some View {
-      
-       
-            
         VStack(alignment:.leading){
             Text("Motivation")
                 .font(.headline)

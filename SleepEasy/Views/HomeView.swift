@@ -1,6 +1,6 @@
 //
-//  SleepEasyView.swift
-//  SleepEasy
+//  HomeView.swift
+//  HomeView
 //
 //  Created by Luka Šalipur on 13.9.22..
 //
@@ -9,7 +9,7 @@ import SwiftUI
 
 
 
-struct SleepEasyView: View {
+struct HomeView: View {
     
     
     var body: some View {
@@ -32,9 +32,9 @@ struct SleepEasyView: View {
     }
 }
 
-struct SleepEasyView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     
     static var previews: some View {
-        SleepEasyView()
+        HomeView()
     }
 }
