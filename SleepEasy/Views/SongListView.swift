@@ -43,10 +43,6 @@ struct SongListView: View {
                         ForEach(soundVM.sound) { sound in
                             // For filter
                             if genre.genreFilter == sound.genre{
-                          
-                                NavigationLink{
-                                    PlayerView(audio: sound).navigationBarBackButtonHidden(true)
-                                } label: {
                                     VStack{
                                         HStack(){
                                             Image("\(sound.image)")
@@ -72,13 +68,19 @@ struct SongListView: View {
                                             .onTapGesture(perform: {
                                                 isFullScreen.toggle()
                                             })
+                                    }.onTapGesture {
+                                        isFullScreen = true
                                     }
                                     
                                     .frame(maxWidth:340, maxHeight: 70)
                                     .background(.white)
                                     .cornerRadius(15)
                                     .shadow(color: Color.black.opacity(0.33), radius: 5, x: 7, y: 7)
-                                }.ignoresSafeArea()
+                                    .fullScreenCover(isPresented: $isFullScreen) {
+                                    
+                                            PlayerView(audio: sound)
+                                  
+                                    }
                             }
                         }
                     }.frame(maxWidth:.infinity, maxHeight:.infinity)

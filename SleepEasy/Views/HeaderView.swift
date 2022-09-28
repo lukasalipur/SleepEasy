@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HeaderView: View {
     @StateObject var genre = FilterGenre.shared
-    
+   
     var body: some View {
         ZStack{
             VStack{
@@ -23,8 +23,6 @@ struct HeaderView: View {
                         .foregroundColor(.white)
                         .font(.title)
                         .fontWeight(.bold)
-                   
-                 
                     }
                     .padding(.top, 20)
                         .frame(maxWidth:.infinity, maxHeight:70, alignment:.trailing)

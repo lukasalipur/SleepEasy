@@ -7,46 +7,56 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+
+    @State var currentTab = 0
+    
     init() {
         UITabBar.appearance().backgroundColor = UIColor.white
     }
+
+    
     
     var body: some View {
-
-            TabView{
-                HomeView()
+    
+            TabView(selection:self.$currentTab){
+         
+                HomeView().tag(0)
                     .tabItem{
                         Image(systemName:"house")
                         Text("Home")
                     }
                 
-                SleepView()
+                
+                SleepView().tag(1)
                     .tabItem{
                         Image(systemName:"moon")
                         Text("Sleep")
                     }
                 
-                HomeView()
+                
+                HomeView().tag(2)
                     .tabItem{
                         Image("lotus")
                         Text("Meditate")
                     }
                 
-                HomeView()
+                
+                HomeView().tag(3)
                     .tabItem{
                         Image(systemName:"music.note")
                         Text("Music")
                     }
                 
                 
-                HomeView()
+                HomeView().tag(4)
                     .tabItem {
                         Image(systemName:"bell")
                         Text("Reminder")
                     }
             }
-        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

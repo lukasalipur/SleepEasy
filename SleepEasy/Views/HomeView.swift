@@ -10,9 +10,10 @@ import SwiftUI
 
 
 struct HomeView: View {
-    
+
     
     var body: some View {
+        
         NavigationView{
             
             VStack{
@@ -21,8 +22,9 @@ struct HomeView: View {
                     CenterView()
                     FooterView()
                     Spacer()
-                }
-            }
+                } 
+
+            } 
             
             .frame(maxWidth:.infinity, maxHeight: .infinity)
             .background(Color("backgroundGrey"))

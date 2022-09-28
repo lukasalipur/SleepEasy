@@ -13,6 +13,7 @@
 		A60212AA28DBBF3E009B5298 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60212A928DBBF3E009B5298 /* HeaderView.swift */; };
 		A60212AC28DBBF65009B5298 /* CenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60212AB28DBBF65009B5298 /* CenterView.swift */; };
 		A60212AF28DBC90A009B5298 /* WaveBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60212AE28DBC90A009B5298 /* WaveBackgroundView.swift */; };
+		A623CA1028E32FDC00D81496 /* SleepTabCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A623CA0F28E32FDC00D81496 /* SleepTabCard.swift */; };
 		A65F1EE328CF5DB1006290B6 /* SleepEasyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1EE228CF5DB1006290B6 /* SleepEasyApp.swift */; };
 		A65F1EE528CF5DB1006290B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1EE428CF5DB1006290B6 /* ContentView.swift */; };
 		A65F1EE728CF5DB4006290B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65F1EE628CF5DB4006290B6 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		A60212A928DBBF3E009B5298 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		A60212AB28DBBF65009B5298 /* CenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterView.swift; sourceTree = "<group>"; };
 		A60212AE28DBC90A009B5298 /* WaveBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveBackgroundView.swift; sourceTree = "<group>"; };
+		A623CA0F28E32FDC00D81496 /* SleepTabCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTabCard.swift; sourceTree = "<group>"; };
 		A65F1EDF28CF5DB1006290B6 /* SleepEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65F1EE228CF5DB1006290B6 /* SleepEasyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepEasyApp.swift; sourceTree = "<group>"; };
 		A65F1EE428CF5DB1006290B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				A60212A528DBB78C009B5298 /* SmallCardView.swift */,
 				A65F1EF828CFD045006290B6 /* PlaybackControllButton.swift */,
 				A60212AE28DBC90A009B5298 /* WaveBackgroundView.swift */,
+				A623CA0F28E32FDC00D81496 /* SleepTabCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65F1EF328CF61FF006290B6 /* Sounds.swift in Sources */,
+				A623CA1028E32FDC00D81496 /* SleepTabCard.swift in Sources */,
 				A60212AC28DBBF65009B5298 /* CenterView.swift in Sources */,
 				A6AD657728DF7513007A90C4 /* SleepView.swift in Sources */,
 				A65F1F0428D12D98006290B6 /* BigCardView.swift in Sources */,
