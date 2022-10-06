@@ -10,8 +10,8 @@ This app is <b>stream</b> based app, so you won't be able to play any sounds/mus
 
 <h3>Skills that I needed for SleepEasy:</h3>
 
-<p>Managing with Firebase.</p>
-<p>Swift.</p>
-<p>SwiftUI.</p>
-<p>Figma for design.</p>
-<p>And most powerful, <b>thinking.</b></p>
+<p>- Managing with Firebase.</p>
+<p>- Swift.</p>
+<p>- SwiftUI.</p>
+<p>- Figma for design.</p>
+<p>- And most powerful, <b>thinking.</b></p>
