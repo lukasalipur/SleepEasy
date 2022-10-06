@@ -11,4 +11,6 @@ class FilterGenre:ObservableObject {
     static let shared = FilterGenre()
     
     @Published var genreFilter = "none"
+    @Published var textCase = "none"
+    @Published var isMusic = false
 }

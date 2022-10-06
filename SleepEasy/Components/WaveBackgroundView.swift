@@ -15,7 +15,7 @@ struct WaveBackgroundView: Shape {
         path.addLine(to: CGPoint(x: rect.maxX, y: 0))
         path.addLine(to: CGPoint(x:rect.maxX, y:rect.maxY))
         path.addCurve(to: CGPoint(x: rect.minX, y: rect.maxY),
-                      control1: CGPoint(x: rect.maxX * 0.5, y: rect.maxY * 3),
+                      control1: CGPoint(x: rect.maxX * 0.5, y: rect.maxY * 2.5),
                       control2: CGPoint(x: rect.maxX * 0.50, y: rect.midY * 0.1))
         path.closeSubpath()
        

@@ -157,7 +157,7 @@ struct PlayerView: View {
 
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerView(audio: Sound(title: "there is", author: "", duration: 0, image: "", track: "", genre: ""), isPreview:true)
+        PlayerView(audio: Sound(title: "there is", author: "", duration: 0, image: "", track: "", genre: "", text:"", textCase:"", isMusic:true), isPreview:true)
             .environmentObject(AudioManager())
     }
 }

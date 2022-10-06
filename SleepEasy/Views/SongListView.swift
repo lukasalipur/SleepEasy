@@ -10,25 +10,32 @@ import AVKit
 
 struct SongListView: View {
     @ObservedObject var soundVM = SoundViewModel()
-    @State private var isFullScreen:Bool = false
+    @State private var isFullScreen: Sound? = nil
     
     @EnvironmentObject var audioManager: AudioManager
     @Environment(\.dismiss) var dismiss
     
     var audio: Sound
     
-   
+    
     @ObservedObject var genre = FilterGenre.shared
-
+    
     
     var body: some View {
-        
         NavigationView{
+            ZStack{
+                LinearGradient(gradient: Gradient(colors: [
+                    Color("startBlue"),
+                    Color("secondBlue"),
+                    Color("thirdBlue"),
+                    Color("endBlue")
+                ]), startPoint: .top, endPoint: .bottom)
+                    .ignoresSafeArea()
+         
             VStack{
                 
                 HStack{
                     Button{
-//                        audioManager.stop()
                         dismiss()
                     } label: {
                         Image(systemName: "xmark.circle.fill")
@@ -40,15 +47,15 @@ struct SongListView: View {
                 }.padding(20)
                 ScrollView{
                     VStack(spacing:20){
-                        ForEach(soundVM.sound) { sound in
+                        ForEach(soundVM.sound, id:\.self) { sound in
                             // For filter
                             if genre.genreFilter == sound.genre{
-                                    VStack{
-                                        HStack(){
-                                            Image("\(sound.image)")
-                                                .resizable()
-                                                .frame(maxWidth:70, maxHeight:70)
-                                            
+                                VStack{
+                                    
+                                    HStack(){
+                                        Image("\(sound.image)")
+                                            .resizable()
+                                            .frame(maxWidth:70, maxHeight:70)
                                             VStack(alignment:.leading){
                                                 Text(sound.title)
                                                     .fontWeight(.bold)
@@ -56,45 +63,44 @@ struct SongListView: View {
                                                     .font(.system(size:9))
                                                     .fontWeight(.light)
                                             }
-                                            
-                                            Spacer()
-                                            
-                                            Text("\(DateComponentsFormatter.positional.string(from:sound.duration) ?? "0:00")")
-                                 
-                                                .font(.system(size:12))
-                                                .fontWeight(.light)
-                                                .padding(15)
-                                        } .frame(maxWidth:.infinity, alignment: .leading)
-                                            .onTapGesture(perform: {
-                                                isFullScreen.toggle()
-                                            })
-                                    }.onTapGesture {
-                                        isFullScreen = true
+                                        Spacer()
+                                        Text("\(DateComponentsFormatter.positional.string(from:sound.duration) ?? "0:00")")
+                                            .font(.system(size:12))
+                                            .fontWeight(.light)
+                                            .padding(15)
+                                    }.onTapGesture{
+                                        isFullScreen = sound
                                     }
+                                    .frame(maxWidth:.infinity, alignment: .leading)
                                     
-                                    .frame(maxWidth:340, maxHeight: 70)
-                                    .background(.white)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color.black.opacity(0.33), radius: 5, x: 7, y: 7)
-                                    .fullScreenCover(isPresented: $isFullScreen) {
-                                    
-                                            PlayerView(audio: sound)
-                                  
-                                    }
+                                }
+                                
+                                .frame(maxWidth:340, maxHeight: 70)
+                                .background(.white)
+                                .cornerRadius(15)
+                                .shadow(color: Color.black.opacity(0.33), radius: 5, x: 7, y: 7)
+                                
                             }
                         }
-                    }.frame(maxWidth:.infinity, maxHeight:.infinity)
+                    
+                    }
+                    .frame(maxWidth:.infinity, maxHeight:.infinity)
+                    .fullScreenCover(item:$isFullScreen) { item in
+                        PlayerView(audio: item)
+                    }
+                  
                 }
                 .foregroundColor(.black)
             }.onAppear {
                 self.soundVM.fetchData()
             }
-            .background(Color("backgroundDark"))
+           
+
             .navigationBarTitle("")
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
+            }
         }
-        
     }
 }
 struct SongListView_Previews: PreviewProvider {

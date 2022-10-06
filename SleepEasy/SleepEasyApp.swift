@@ -17,6 +17,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         
         return true
     }
+    
+   
 }
 
 @main
@@ -25,10 +27,16 @@ struct SleepEasyApp: App {
     @StateObject var audioManager = AudioManager()
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
-    
     var body: some Scene {
         WindowGroup {
+                
                 ContentView()
+                .onAppear(){
+                    NotificationManager.instance.requestAuthorization()
+                    NotificationManager.instance.scheduleNotification()
+                    NotificationManager.instance.cancelNotification()
+                    UIApplication.shared.applicationIconBadgeNumber = 0
+                }
                 .environmentObject(audioManager)
         }
     }

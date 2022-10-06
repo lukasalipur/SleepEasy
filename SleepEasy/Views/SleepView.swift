@@ -15,6 +15,7 @@ struct SleepView: View {
         
 
         NavigationView{
+
             ZStack{
                 LinearGradient(gradient: Gradient(colors: [
                     Color("startBlue"),
@@ -23,101 +24,91 @@ struct SleepView: View {
                     Color("endBlue")
                 ]), startPoint: .top, endPoint: .bottom)
                     .ignoresSafeArea()
+                
                 VStack{
-                    
-                    
-                    Text("WHITE & PINK NOISE")
-                        .fontWeight(.bold)
-                        .frame(maxWidth:.infinity, alignment: .leading)
-                        .padding(.leading, 47)
-                    
-                    NavigationLink{
-                        SongListView(audio: Sound.testData)
-                            .navigationBarBackButtonHidden(true)
-                            .navigationBarTitle("")
-                            .navigationBarHidden(true)
-                        
-                    } label: {
-                        
-                        SleepTabCard(image: "wpnoise", imagesmall: "zznight", width: 335, height: 120, genre:self.genre.genreFilter, titleOfSection: "")
-                            .padding(.bottom, 20)
-                        
-                    }.simultaneousGesture(TapGesture().onEnded{
-                        self.genre.genreFilter = "wpnoise"
-                    })
-                    
-                    Text("ASMR FOR SLEEP")
-                        .fontWeight(.bold)
-                        .frame(maxWidth:.infinity, alignment: .leading)
-                        .padding(.leading, 47)
-                    
-                    NavigationLink{
-                        SongListView(audio: Sound.testData)
-                            .navigationBarBackButtonHidden(true)
-                            .navigationBarTitle("")
-                            .navigationBarHidden(true)
-                        
-                    } label: {
-                        SleepTabCard(image: "asmr", imagesmall: "", width: 335, height: 120, genre:self.genre.genreFilter, titleOfSection: "")
-                        
-                        
-                    }.simultaneousGesture(TapGesture().onEnded{
-                        self.genre.genreFilter = "wpnoise"
-                    })
                     Spacer()
-                    
-                    Text("SOUND OF NATURE")
-                        .fontWeight(.bold)
-                        .frame(maxWidth:.infinity, alignment: .leading)
-                        .padding(.leading, 47)
-                    
-                    HStack(spacing:-75){
+                    VStack{
+                        VStack{
+                        Text("Meditate")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                        }.frame(maxWidth:325, alignment:.leading)
+                            .padding(.bottom, 15)
                         NavigationLink{
                             SongListView(audio: Sound.testData)
                                 .navigationBarBackButtonHidden(true)
                                 .navigationBarTitle("")
                                 .navigationBarHidden(true)
-                            
                         } label: {
-                            SleepTabCard(image: "mistWood", imagesmall: "", width: 150, height: 150, genre:self.genre.genreFilter, titleOfSection: "")
-                            
-                            
-                        }.simultaneousGesture(TapGesture().onEnded{
-                            self.genre.genreFilter = "wpnoise"
+                            BigCardView(title: "Mindfulness", image: "mindfulness", genre: "mindfulness")
+                        }
+                        .simultaneousGesture(TapGesture().onEnded{
+                            self.genre.genreFilter = "sleepmindfulness"
                         })
-                        
                         NavigationLink{
                             SongListView(audio: Sound.testData)
                                 .navigationBarBackButtonHidden(true)
                                 .navigationBarTitle("")
                                 .navigationBarHidden(true)
-                            
                         } label: {
-                            SleepTabCard(image: "waterfall", imagesmall: "", width: 150, height: 150, genre:self.genre.genreFilter, titleOfSection: "")
-                            
-                            
-                        }.simultaneousGesture(TapGesture().onEnded{
-                            self.genre.genreFilter = "wpnoise"
+                            BigCardView(title: "Meditation for ADHD", image: "adhd", genre: "adhd").padding(.top, 20)
+                        }
+                        .simultaneousGesture(TapGesture().onEnded{
+                            self.genre.genreFilter = "adhd"
                         })
-                        
-                        
-                    }.toolbar {
-                        ToolbarItem(placement: .navigationBarLeading) {
-                            VStack {
-                                Text("Sleep").font(.system(size:26))
-                                    .fontWeight(.bold)
-                                    .padding(.leading, 25)
-                            }
+                       
+                     
+                    }.padding(.bottom, 30)
+                    VStack{
+                        Text("Meditate")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                    }.frame(maxWidth:325, alignment:.leading)
+                    HStack(spacing:20){
+                        NavigationLink{
+                            SongListView(audio: Sound.testData)
+                                .navigationBarBackButtonHidden(true)
+                                .navigationBarTitle("")
+                                .navigationBarHidden(true)
+                        } label: {
+                            MediumCardView(title:"White noise", image:"whiten", genre:"whitenoise")
+                        }
+                        .simultaneousGesture(TapGesture().onEnded{
+                            self.genre.genreFilter = "whitenoise"
+                        })
+                     
+                        NavigationLink{
+                            SongListView(audio: Sound.testData)
+                                .navigationBarBackButtonHidden(true)
+                                .navigationBarTitle("")
+                                .navigationBarHidden(true)
+                        } label: {
+                            MediumCardView(title: "Pink noise", image: "pinknoise", genre: "pinknoise")
+                        }
+                        .simultaneousGesture(TapGesture().onEnded{
+                            self.genre.genreFilter = "pinknoise"
+                        })
+                    
+                    }
+                   Spacer()
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        VStack {
+                            Text("Sleep").font(.system(size:26))
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
                         }
                     }
-                    Spacer()
                 }
+                .ignoresSafeArea()
+                .foregroundColor(.white)
+
             }
             .foregroundColor(.white)
         }
-       
+        }
       
-    }
 }
 
 

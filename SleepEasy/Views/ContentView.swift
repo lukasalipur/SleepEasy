@@ -8,7 +8,10 @@
 import SwiftUI
 
 
+
 struct ContentView: View {
+    
+    
 
     @State var currentTab = 0
     
@@ -19,7 +22,7 @@ struct ContentView: View {
     
     
     var body: some View {
-    
+        VStack{
             TabView(selection:self.$currentTab){
          
                 HomeView().tag(0)
@@ -36,27 +39,26 @@ struct ContentView: View {
                     }
                 
                 
-                HomeView().tag(2)
+                MeditationView().tag(2)
                     .tabItem{
                         Image("lotus")
                         Text("Meditate")
                     }
                 
                 
-                HomeView().tag(3)
+                MusicView(audio: Sound.testData).tag(3)
                     .tabItem{
                         Image(systemName:"music.note")
                         Text("Music")
                     }
                 
-                
-                HomeView().tag(4)
-                    .tabItem {
-                        Image(systemName:"bell")
-                        Text("Reminder")
-                    }
             }
+      
+        }
     }
+    
+  
+        
 }
 
 struct ContentView_Previews: PreviewProvider {

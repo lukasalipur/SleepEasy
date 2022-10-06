@@ -9,4 +9,5 @@ target 'SleepEasy' do
 	pod 'Firebase/Core'
 	pod 'FirebaseFirestore'
 	pod 'Firebase/Storage'
+	pod 'Firebase/Messaging'
 end

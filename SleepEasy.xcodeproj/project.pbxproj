@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		5B416E0002A76A34F7A18B8A /* Pods_SleepEasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6ED3B7E8DEB9FFC518224F /* Pods_SleepEasy.framework */; };
 		A60212A328DBB6F8009B5298 /* FilterGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60212A228DBB6F7009B5298 /* FilterGenre.swift */; };
-		A60212A628DBB78C009B5298 /* SmallCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60212A528DBB78C009B5298 /* SmallCardView.swift */; };
-		A60212AA28DBBF3E009B5298 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60212A928DBBF3E009B5298 /* HeaderView.swift */; };
-		A60212AC28DBBF65009B5298 /* CenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60212AB28DBBF65009B5298 /* CenterView.swift */; };
 		A60212AF28DBC90A009B5298 /* WaveBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60212AE28DBC90A009B5298 /* WaveBackgroundView.swift */; };
 		A623CA1028E32FDC00D81496 /* SleepTabCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A623CA0F28E32FDC00D81496 /* SleepTabCard.swift */; };
+		A648248428E8993D00F53823 /* MeditationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A648248128E8993C00F53823 /* MeditationCard.swift */; };
+		A648248528E8993D00F53823 /* MeditationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A648248228E8993D00F53823 /* MeditationListView.swift */; };
+		A648248628E8993D00F53823 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A648248328E8993D00F53823 /* MeditationView.swift */; };
 		A65F1EE328CF5DB1006290B6 /* SleepEasyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1EE228CF5DB1006290B6 /* SleepEasyApp.swift */; };
 		A65F1EE528CF5DB1006290B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1EE428CF5DB1006290B6 /* ContentView.swift */; };
 		A65F1EE728CF5DB4006290B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65F1EE628CF5DB4006290B6 /* Assets.xcassets */; };
@@ -27,8 +27,9 @@
 		A65F1F0028CFEC16006290B6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1EFF28CFEC16006290B6 /* Extensions.swift */; };
 		A65F1F0228D12D7C006290B6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1F0128D12D7B006290B6 /* HomeView.swift */; };
 		A65F1F0428D12D98006290B6 /* BigCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F1F0328D12D98006290B6 /* BigCardView.swift */; };
+		A673B47A28EE5C5C00D950A1 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A673B47928EE5C5C00D950A1 /* NotificationManager.swift */; };
+		A6ACBD2228EE1A0F007BE67D /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ACBD2128EE1A0F007BE67D /* MusicView.swift */; };
 		A6AD657328DDE7B6007A90C4 /* MediumCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD657228DDE7B5007A90C4 /* MediumCardView.swift */; };
-		A6AD657528DE4565007A90C4 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD657428DE4565007A90C4 /* FooterView.swift */; };
 		A6AD657728DF7513007A90C4 /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD657628DF7513007A90C4 /* SleepView.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,11 +38,11 @@
 		4C27E442CA116B622E49F16B /* Pods-SleepEasy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepEasy.release.xcconfig"; path = "Target Support Files/Pods-SleepEasy/Pods-SleepEasy.release.xcconfig"; sourceTree = "<group>"; };
 		5F6ED3B7E8DEB9FFC518224F /* Pods_SleepEasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SleepEasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60212A228DBB6F7009B5298 /* FilterGenre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterGenre.swift; sourceTree = "<group>"; };
-		A60212A528DBB78C009B5298 /* SmallCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCardView.swift; sourceTree = "<group>"; };
-		A60212A928DBBF3E009B5298 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-		A60212AB28DBBF65009B5298 /* CenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterView.swift; sourceTree = "<group>"; };
 		A60212AE28DBC90A009B5298 /* WaveBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveBackgroundView.swift; sourceTree = "<group>"; };
 		A623CA0F28E32FDC00D81496 /* SleepTabCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTabCard.swift; sourceTree = "<group>"; };
+		A648248128E8993C00F53823 /* MeditationCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationCard.swift; sourceTree = "<group>"; };
+		A648248228E8993D00F53823 /* MeditationListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationListView.swift; sourceTree = "<group>"; };
+		A648248328E8993D00F53823 /* MeditationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 		A65F1EDF28CF5DB1006290B6 /* SleepEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65F1EE228CF5DB1006290B6 /* SleepEasyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepEasyApp.swift; sourceTree = "<group>"; };
 		A65F1EE428CF5DB1006290B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,8 +58,10 @@
 		A65F1EFF28CFEC16006290B6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A65F1F0128D12D7B006290B6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A65F1F0328D12D98006290B6 /* BigCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigCardView.swift; sourceTree = "<group>"; };
+		A673B47828EE537E00D950A1 /* SleepEasy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SleepEasy.entitlements; sourceTree = "<group>"; };
+		A673B47928EE5C5C00D950A1 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		A6ACBD2128EE1A0F007BE67D /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
 		A6AD657228DDE7B5007A90C4 /* MediumCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumCardView.swift; sourceTree = "<group>"; };
-		A6AD657428DE4565007A90C4 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		A6AD657628DF7513007A90C4 /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,9 +99,9 @@
 			children = (
 				A65F1F0328D12D98006290B6 /* BigCardView.swift */,
 				A6AD657228DDE7B5007A90C4 /* MediumCardView.swift */,
-				A60212A528DBB78C009B5298 /* SmallCardView.swift */,
 				A65F1EF828CFD045006290B6 /* PlaybackControllButton.swift */,
 				A60212AE28DBC90A009B5298 /* WaveBackgroundView.swift */,
+				A648248128E8993C00F53823 /* MeditationCard.swift */,
 				A623CA0F28E32FDC00D81496 /* SleepTabCard.swift */,
 			);
 			path = Components;
@@ -111,10 +114,10 @@
 				A65F1EF428CF637D006290B6 /* SongListView.swift */,
 				A65F1EE428CF5DB1006290B6 /* ContentView.swift */,
 				A6AD657628DF7513007A90C4 /* SleepView.swift */,
+				A6ACBD2128EE1A0F007BE67D /* MusicView.swift */,
 				A65F1F0128D12D7B006290B6 /* HomeView.swift */,
-				A60212A928DBBF3E009B5298 /* HeaderView.swift */,
-				A60212AB28DBBF65009B5298 /* CenterView.swift */,
-				A6AD657428DE4565007A90C4 /* FooterView.swift */,
+				A648248228E8993D00F53823 /* MeditationListView.swift */,
+				A648248328E8993D00F53823 /* MeditationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 				A65F1EFA28CFD946006290B6 /* AudioManager.swift */,
 				A65F1EF228CF61FF006290B6 /* Sounds.swift */,
 				A60212A228DBB6F7009B5298 /* FilterGenre.swift */,
+				A673B47928EE5C5C00D950A1 /* NotificationManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,6 +162,7 @@
 		A65F1EE128CF5DB1006290B6 /* SleepEasy */ = {
 			isa = PBXGroup;
 			children = (
+				A673B47828EE537E00D950A1 /* SleepEasy.entitlements */,
 				A65F1EFE28CFE7A1006290B6 /* Info.plist */,
 				A60212A128DBB66E009B5298 /* Extensions */,
 				A60212A028DBB642009B5298 /* Views */,
@@ -295,24 +300,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65F1EF328CF61FF006290B6 /* Sounds.swift in Sources */,
+				A6ACBD2228EE1A0F007BE67D /* MusicView.swift in Sources */,
+				A673B47A28EE5C5C00D950A1 /* NotificationManager.swift in Sources */,
 				A623CA1028E32FDC00D81496 /* SleepTabCard.swift in Sources */,
-				A60212AC28DBBF65009B5298 /* CenterView.swift in Sources */,
+				A648248628E8993D00F53823 /* MeditationView.swift in Sources */,
 				A6AD657728DF7513007A90C4 /* SleepView.swift in Sources */,
 				A65F1F0428D12D98006290B6 /* BigCardView.swift in Sources */,
 				A65F1EFB28CFD946006290B6 /* AudioManager.swift in Sources */,
 				A60212A328DBB6F8009B5298 /* FilterGenre.swift in Sources */,
 				A6AD657328DDE7B6007A90C4 /* MediumCardView.swift in Sources */,
-				A60212A628DBB78C009B5298 /* SmallCardView.swift in Sources */,
 				A65F1EE528CF5DB1006290B6 /* ContentView.swift in Sources */,
 				A65F1F0028CFEC16006290B6 /* Extensions.swift in Sources */,
+				A648248428E8993D00F53823 /* MeditationCard.swift in Sources */,
 				A65F1EE328CF5DB1006290B6 /* SleepEasyApp.swift in Sources */,
 				A65F1EF728CFCF94006290B6 /* PlayerView.swift in Sources */,
 				A60212AF28DBC90A009B5298 /* WaveBackgroundView.swift in Sources */,
 				A65F1EF528CF637D006290B6 /* SongListView.swift in Sources */,
+				A648248528E8993D00F53823 /* MeditationListView.swift in Sources */,
 				A65F1F0228D12D7C006290B6 /* HomeView.swift in Sources */,
 				A65F1EF928CFD045006290B6 /* PlaybackControllButton.swift in Sources */,
-				A60212AA28DBBF3E009B5298 /* HeaderView.swift in Sources */,
-				A6AD657528DE4565007A90C4 /* FooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,18 +447,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SleepEasy/SleepEasy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SleepEasy/Preview Content\"";
-				DEVELOPMENT_TEAM = 437XH2568Z;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SleepEasy/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = Main;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +470,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lukasalipur.SleepEasy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -472,18 +483,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SleepEasy/SleepEasy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SleepEasy/Preview Content\"";
-				DEVELOPMENT_TEAM = 437XH2568Z;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SleepEasy/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = Main;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -491,6 +506,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lukasalipur.SleepEasy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
